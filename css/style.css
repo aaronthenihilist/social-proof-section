@@ -10,14 +10,13 @@ body {
     align-items: center;
     flex-direction: column;
     padding: 1rem;
+    gap: 2rem;
 }
 
 main {
     z-index: 2;
     position: relative;
     max-width: 1110px;
-    margin: auto;
-    padding: 7.75rem 0;
     gap: 5rem;
     display: flex;
     flex-direction: column;
@@ -44,6 +43,64 @@ p {
     justify-content: space-between;
 }
 
+.rating-row:nth-of-type(2) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.buyer-review-item {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    background-color: hsl(300, 43%, 22%);
+    border-radius: .5rem;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.buyer-review-item:nth-of-type(2) {
+    margin-top: 1rem;
+    height: calc(100% - 4rem);
+}
+
+.buyer-review-item:nth-of-type(3) {
+    margin-top: 2rem;
+    height: calc(100% - 4rem);
+}
+
+.buyer-review-item p {
+    color: hsl(0, 0%, 100%);
+    font-weight: 400;
+    font-size: 1.12rem;
+}
+
+.buyer-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.buyer-pic {
+    width: 40px;
+    border-radius: 50%;
+}
+
+.buyer-name {
+    display: flex;
+    flex-direction: column;
+    font-weight: 700;
+    color: hsl(0, 0%, 100%);
+    gap: .25rem;
+}
+
+.buyer-name span {
+    font-weight: 400;
+    color: hsl(333, 80%, 67%);
+}
+
 .header-copy-col {
     width: 435px;
     display: flex;
@@ -65,11 +122,13 @@ p {
     gap: 2rem;
     align-items: center;
     background-color: hsl(300, 24%, 96%);
-    padding: 1rem 2.25rem;
+    padding: 1rem 2rem;
     border-radius: .75rem;
+    width: calc(445px - 4rem);
 }
 
-.star-rating-row p, h1 {
+.star-rating-row p,
+h1 {
     color: hsl(300, 43%, 22%);
 }
 
@@ -79,14 +138,24 @@ p {
 }
 
 .star-rating-row:nth-of-type(1) {
-    margin-right: 10.25rem;
+    margin-right: 100px;
 }
 
 .star-rating-row:nth-of-type(2) {
-    margin-right: 4.75rem;
+    margin-right: 50px;
 }
 
 .stars {
     display: flex;
     gap: .5rem;
+}
+
+footer {
+    text-align: center;
+    line-height: 1.5rem;
+}
+
+footer a {
+    color: hsl(300, 43%, 22%);
+    font-weight: 700;
 }
