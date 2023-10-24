@@ -20,6 +20,7 @@ body {
     top: 0;
     left: 0;
     z-index: 0;
+    max-width: 100%;
 }
 
 .bg-pattern-bottom-desktop {
@@ -27,6 +28,14 @@ body {
     bottom: 0;
     right: 0;
     z-index: 0;
+}
+
+.bg-pattern-top-mobile {
+    display: none;
+}
+
+.bg-pattern-bottom-mobile {
+    display: none;
 }
 
 main {
@@ -181,6 +190,32 @@ footer a {
 @media screen and (max-width: 1024px) {
   body {
     overflow-x: hidden;
+  }
+
+  .bg-pattern-top-desktop {
+    display: none;
+  }
+
+  .bg-pattern-bottom-desktop {
+    display: none;
+  }
+
+  .bg-pattern-top-mobile {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    width: 100%;
+  }
+
+  .bg-pattern-bottom-mobile {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 0;
+    width: 100%;
   }
 
   main {
