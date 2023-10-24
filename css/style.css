@@ -11,6 +11,22 @@ body {
     flex-direction: column;
     padding: 1rem;
     gap: 2rem;
+    position: relative;
+    padding-bottom: calc(115px - 1rem);
+}
+
+.bg-pattern-top-desktop {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+.bg-pattern-bottom-desktop {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 0;
 }
 
 main {
@@ -20,6 +36,7 @@ main {
     gap: 5rem;
     display: flex;
     flex-direction: column;
+    margin-top: calc(115px - 1rem);
 }
 
 h1 {
@@ -153,6 +170,7 @@ h1 {
 footer {
     text-align: center;
     line-height: 1.5rem;
+    z-index: 2;
 }
 
 footer a {
